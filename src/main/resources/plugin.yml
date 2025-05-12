@@ -1,0 +1,19 @@
+name: PrivateJoinMessage
+version: 1.4
+main: com.ethanetxyz.PrivateJoinMessage
+api-version: 1.19
+commands:
+  pjm:
+    description: Main command for PrivateJoinMessage plugin
+    usage: /pjm <reload|list>
+    permission: privatejoinmessage.command
+    permission-message: You do not have permission to use this command.
+    subcommands:
+      reload:
+        description: Reload the join messages
+        permission: privatejoinmessage.reload
+        permission-message: You do not have permission to reload the join messages.
+      list:
+        description: List the current join messages
+        permission: privatejoinmessage.list
+        permission-message: You do not have permission to view the join messages.

@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.ethanetxyz'
+version = '1.4'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.21.4-R0.1-SNAPSHOT'
+    implementation 'com.google.code.gson:gson:2.10.1'
+}
+
+jar {
+    archiveBaseName.set('PrivateJoinMessage')
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
