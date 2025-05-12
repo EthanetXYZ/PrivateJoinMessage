@@ -1,0 +1,40 @@
+# ========== Gradle ==========
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ========== IntelliJ IDEA ==========
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# ========== Eclipse ==========
+.project
+.classpath
+.csettings/
+.settings/
+
+# ========== VS Code ==========
+.vscode/
+
+# ========== OS Files ==========
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+._*
+
+# ========== Logs ==========
+*.log
+
+# ========== Minecraft Plugin Files ==========
+# Avoid committing compiled plugin jars (can be built via CI or manually)
+*.jar
+
+# ========== Others ==========
+*.swp
+*.swo
+*.bak
+*.tmp
